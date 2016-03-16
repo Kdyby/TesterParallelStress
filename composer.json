@@ -1,0 +1,33 @@
+{
+	"name": "kdyby/tester-parallel-stress",
+	"type": "library",
+	"description": "Parallel stress trait for Nette Tester",
+	"keywords": ["nette", "kdyby", "test", "threads", "processes", "parallel", "tester"],
+	"homepage": "http://kdyby.org",
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "Filip Procházka",
+			"homepage": "http://filip-prochazka.com",
+			"email": "filip@prochazka.su"
+		}
+	],
+	"support": {
+		"email": "filip@prochazka.su",
+		"issues": "https://github.com/Kdyby/TesterParallelStress/issues"
+	},
+	"require": {
+		"php": ">=5.4",
+		"kdyby/parse-use-statements": "~0.1",
+		"tracy/tracy": "~2.3",
+		"nette/tester": "~1.7"
+	},
+	"autoload": {
+		"psr-4": {
+			"Kdyby\\TesterParallelStress\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"classmap": ["tests"]
+	}
+}
